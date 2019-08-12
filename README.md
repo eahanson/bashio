@@ -8,9 +8,10 @@ Echos colorized strings.
 Usage: `cecho` followed by a list of strings and colors.
 
 Colors start with `--`, can optionally have `bold` or `bright` modifiers, and can be one of the
-supported colors: `cyan`, `green`, `red`, `white`, or `yellow`.
+supported colors: `cyan`, `green`, `red`, `white`, or `yellow`. For example, `—-yellow`, 
+`—-bold-yellow`, `—-bold-bright-yellow`, `—-bright-bold-yellow`.
 
-Example:
+Full example:
 
     cecho --bold-bright-yellow "Checking capacitor" --bold-yellow "(type=flux):" --bright-green "OK"
     
