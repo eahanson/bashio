@@ -22,10 +22,16 @@ run_test "can make a string with various colors" \
 run_test "realistic example" \
   'cecho --bold-bright-yellow "Checking capacitor" --bold-yellow "(type=flux):" --bright-green "OK"'
 
+run_test "without a newline" \
+  'cecho -n "No newline at the" --bold-red "end" --reset "of this line"'
+echo "this should be on the same line"
+
+run_test "empty argument list results in a newline by itself" \
+  'cecho'
 
 describe "variations"
 
-for color in "cyan" "green" "red" "white" "yellow"; do
+for color in "cyan" "green" "red" "white" "yellow" "blue" "magenta"; do
   run_test "${color}" \
     "cecho --bold-bright-${color} bold-bright-${color} --bold-${color} bold-${color} --bright-${color} bright-${color} --${color} ${color}"
 done
