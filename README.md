@@ -5,11 +5,13 @@ some simple bash scripts for I/O
 
 Echos colorized strings.
 
-Usage: `cecho` followed by a list of strings and colors.
+Usage: `cecho` followed by options and a list of strings and colors.
+
+The only option is '-n' which omits the newline at the end.
 
 Colors start with `--`, can optionally have `bold` or `bright` modifiers, and can be one of the
-supported colors: `cyan`, `green`, `red`, `white`, or `yellow`. For example, `—-yellow`, 
-`—-bold-yellow`, `—-bold-bright-yellow`, `—-bright-bold-yellow`.
+supported colors: `blue`, `cyan`, `green`, `magenta`, `red`, `white`, or `yellow`. For example, 
+`—-yellow`, `—-bold-yellow`, `—-bold-bright-yellow`, `—-bright-bold-yellow`.
 
 Full example:
 
